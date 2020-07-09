@@ -9,3 +9,10 @@ ctx.canvas.height = ROWS * BLOCK_SIZE;
 //[?] scale
 //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale
 ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
+
+//Play button
+let board = new Board();
+function play() {
+	board.reset();
+	console.table(board.grid);
+}
