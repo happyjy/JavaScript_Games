@@ -13,6 +13,10 @@ ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
 //Play button
 let board = new Board();
 function play() {
+	board = board.getEmptyBoard();
+	let piece = new Piece(ctx);
+	piece.draw();
+
 	board.reset();
 	console.table(board.grid);
 }
